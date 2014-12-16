@@ -13,12 +13,12 @@ var message = "AMPlug now enabled!";
 var autowoot = 0;
 var autograb = 0;
 
-API.chatLog(message).css("color","#eee");
+API.chatLog(message);
 
-API.on(API.CHAT_COMMAND, custom);
+API.on(API.CHAT_COMMAND, customcommand);
 
-function custom(value) {
-    if (value == "/am help") {
+function customcommand(value) {
+    if (value == "/am help" || value == "/am") {
         API.chatLog("Type '/am help' for a list of commands");
         API.chatLog("Type '/am info' for information about the plugin");
         API.chatLog("Type '/am autowoot <on/off>' to enable or disable autowoot");
