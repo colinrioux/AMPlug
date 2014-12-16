@@ -17,8 +17,8 @@ var autograb = 0;
 
 
 
-API.chatLog(message);
-$('#chat .update .text').css("color", "#C9E7F3");
+API.chatLog(message, $('#chat .update .text').css("color", "#51A3C9"));
+
 
 
 API.on(API.CHAT_COMMAND, customcommand);
