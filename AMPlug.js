@@ -19,7 +19,7 @@ var autograb = 0;
 
 API.chatLog(message);
 $('#chat .update .text').css("color", "#51A3C9");
-$('#chat .update .text').css("border-left", "#51A3C9", "3px", "solid");
+$('#chat .update .text').css("border-left", "#51A3C9 3px solid");
 
 
 API.on(API.CHAT_COMMAND, customcommand);
