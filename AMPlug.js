@@ -1,9 +1,19 @@
+/*
+
+  Copyrighted (c) 2014 by Colin Rioux (ArdosMusic)
+  Please do not modify or use without permission
+  Created as of Fall 2014
+
+*/
+
+
+
+
 var message = "AMPlug now enabled!";
 var autowoot = 0;
 var autograb = 0;
 
-API.chatLog(message);
-API.sendChat(message); // Tests Chat Message vs. Chat Log
+API.chatLog(message).css("color","#eee");
 
 API.on(API.CHAT_COMMAND, custom);
 
