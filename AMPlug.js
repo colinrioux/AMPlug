@@ -15,7 +15,7 @@ var autograb = 0;
 
 // $('#chat-messages').css("color","#E5E500"); <-- Example how to modify color
 
-$('#chat .update .text').css("color", "#ac76ff");
+$('#chat .update').css("color", "#db182e");
 
 API.chatLog(message);
 
