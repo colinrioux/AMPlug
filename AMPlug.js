@@ -13,7 +13,9 @@ var message = "AMPlug now enabled!";
 var autowoot = 0;
 var autograb = 0;
 
-API.chatLog(message).css("color", "#E5E500");
+$('#chat-messages').css("color","#E5E500");
+
+API.chatLog(message);
 
 API.on(API.CHAT_COMMAND, customcommand);
 
