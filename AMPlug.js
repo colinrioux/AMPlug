@@ -16,7 +16,7 @@ var autograb = 0;
 
 
 
-//API.chatLog(message);
+API.chatLog(message);
 loadSettings();
 
 Chat('init', message);
@@ -77,8 +77,9 @@ function Chat(type, dest) {
   if ($('#chat-message').css('display') == 'block') {
       var chat = $('#chat-messages'), a = chat.scrollTop() > chat[0].scrollHeight - chat.height() - 28;
       chat.append('<div class="update am-' + type + '"><span class="text">' + dest + '</span></div>');
-
-  }
+      if (a) chat.scrollTop(chat[0].scrollHeight);
+      if (chat.children().length >= 512) chat.children().first().remove();
+    } else API.chatLog(m.replace(/<br>/g,', ').replace(/<\/?span>/g,''),true);
 
 }
 
