@@ -10,6 +10,7 @@
 var message = "AMPlug now enabled! Do /am for a list of commands";
 var autowoot = 0;
 var automeh = 0;
+var sock;
 
 // $('#chat-messages').css("color","#E5E500"); <-- Example how to modify color
 
@@ -19,6 +20,11 @@ startup();
 
 function startup() {
   API.chatLog(message); // Temp. Bootup Message
+  sock = new SockJS('http://colin350.github.io:4957');
+  sock.onopen = function() {
+    console.log('Sock Online!');
+  }
+
 
 }
 
