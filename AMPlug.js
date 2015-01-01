@@ -13,6 +13,9 @@ var automeh = 0;
 
 // $('#chat-messages').css("color","#E5E500"); <-- Example how to modify color
 
+$('#tp-fs-hv').remove();
+
+
 startup();
 
 function startup() {
