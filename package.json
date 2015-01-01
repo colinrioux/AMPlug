@@ -1,0 +1,22 @@
+{
+  "name": "AMPlug",
+  "version": "1.0.0",
+  "description": "Plugin for plug.dj designed specifically by ArdosMusic (Colin Rioux). Check him out on twitter! @ArdosMusic . /athion-network /tastycat ",
+  "main": "AMPlug.js",
+  "scripts": {
+    "test": "/am"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colin350/AMPlug.git"
+  },
+  "author": "Colin Rioux",
+  "license": "CC",
+  "bugs": {
+    "url": "https://github.com/colin350/AMPlug/issues"
+  },
+  "homepage": "https://github.com/colin350/AMPlug",
+  "dependencies": {
+    "express": "^4.10.6"
+  }
+}

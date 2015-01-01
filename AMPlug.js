@@ -13,7 +13,6 @@ var automeh = 0;
 
 // $('#chat-messages').css("color","#E5E500"); <-- Example how to modify color
 
-$('#tp-fs-hv').remove();
 
 
 startup();
@@ -75,7 +74,7 @@ function customcommand(value) {
 
     if (value == "/am automeh off") {
       automeh = 0;
-      API.chatLog("You will stop meh-ing after the current song");
+      API.chatLog("[Secret Command]: You will stop meh-ing after the current song");
     }
 
 
