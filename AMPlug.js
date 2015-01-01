@@ -107,4 +107,5 @@ var bot = new PlugAPI ({
 bot.connect('tastycat');
 bot.on('tastycat', function(room) {
   console.log("Joined " + room);
+  API.chatLog("Joined " + room);
 });
