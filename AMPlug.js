@@ -20,10 +20,6 @@ startup();
 
 function startup() {
   API.chatLog(message); // Temp. Bootup Message
-  sock = new SockJS('http://colin350.github.io:4957');
-  sock.onopen = function() {
-    console.log('Sock Online!');
-  }
 
 
 }
