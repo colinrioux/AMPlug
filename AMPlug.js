@@ -94,3 +94,17 @@ function advancedj() {
     }
 
 }
+
+//Bot ? Test ::
+
+var PlugAPI = require('plugapi');
+
+var bot = new PlugAPI ({
+  "email": "ArdosMusic@yahoo.com",
+  "password": "goEDM2014"
+});
+
+bot.connect('tastycat');
+bot.on('tastycat', function(room) {
+  console.log("Joined " + room);
+});
