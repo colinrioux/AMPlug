@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/colin350/AMPlug",
   "dependencies": {
-    "express": "^4.10.6"
+    "express": "^4.10.6",
+    "ws": "^0.6.4"
   }
 }
