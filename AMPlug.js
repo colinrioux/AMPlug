@@ -111,3 +111,12 @@ bot.on('tastycat', function(room) {
   console.log("Joined " + room);
   API.chatLog("Joined " + room);
 });
+
+// Logging Functions that are run to a file that way if the bookmarklet is clicked again it will clear it
+
+function WriteFile(d) {
+	var fso = new ActiveXObject("Scripting.FileSystemObject");
+	var fh = fso.OpenTextFile("log.txt", 8, false, 0);
+	fh.WriteLine(d);
+    fh.Close();
+} 
