@@ -58,15 +58,15 @@ function customcommand(value) {
     if (value == "/am autowoot on") {
         autowoot = 1;
         $('#woot').click();
-        API.chatLog("Autowoot has been activated!");
+        API.chatLog("-= Autowoot has been enabled! =-");
     }
 
     if (value == "/am autowoot off") {
         autowoot = 0;
-        API.chatLog("You will stop wooting after the current song");
+        API.chatLog("-= Autowoot will deactivate after the current song! =-");
     }
 
-    // Automeh:
+    // Automeh: •Todo: Delete? Decide.
 
     if (value == "/am automeh on") {
         automeh = 1;
