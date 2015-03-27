@@ -7,7 +7,7 @@
 
 // Global Variables :
 
-var message = "AMPlug now enabled! Do /am for a list of commands";
+var message = "-= AMPlug now enabled! Do '/am' for a list of commands =-";
 var autowoot = 0;
 var automeh = 0;
 var sock;
@@ -20,6 +20,7 @@ startup();
 
 function startup() {
   API.chatLog(message); // Temp. Bootup Message
+  WriteFile("startup()");
 
 
 }
@@ -84,9 +85,9 @@ function customcommand(value) {
 
 // Next DJ Advances:
 
-API.on(API.ADVANCE, advancedj);
+API.on(API.ADVANCE, advanceDj);
 
-function advancedj() {
+function advanceDj() {
     if (autowoot = 1) {
         $('#woot').click();
     }
