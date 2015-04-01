@@ -33,18 +33,22 @@ function customcommand(value) {
     // Help :
 
     if (value == "/am help" || value == "/am") {
+    	API.chatLog("----------------------------------------------------------");
         API.chatLog("Type '/am help' for a list of commands");
         API.chatLog("Type '/am info' for information about the plugin");
         API.chatLog("Type '/am autowoot <on/off>' to enable or disable autowoot");
+        API.chatLog("----------------------------------------------------------");
     }
 
     // Secret Commands :
 
     if (value == "/am secretcommands") {
+      API.chatLog("------------------------------------------------------------");
       API.chatLog("You have just provoked a secret....");
       API.chatLog("");
       API.chatLog("Disclaimer: Please limit use as in some rooms it is frowned upon.");
       API.chatLog("You may type '/am automeh <on/off>' to automatically meh the song the song");
+      API.chatLog("------------------------------------------------------------");
     }
 
     // Info :
