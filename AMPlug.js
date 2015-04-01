@@ -20,7 +20,6 @@ startup();
 
 function startup() {
   API.chatLog(message); // Temp. Bootup Message
-  WriteFile("startup()"); // Didn't work ** Todo : Fix 
 
 
 }
