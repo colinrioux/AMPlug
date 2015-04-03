@@ -40,21 +40,12 @@ function customcommand(value) {
         API.chatLog("----------------------------------------------------------");
     }
 
-    // Secret Commands :
-
-    if (value == "/am secretcommands") {
-      API.chatLog("------------------------------------------------------------");
-      API.chatLog("You have just provoked a secret....");
-      API.chatLog("");
-      API.chatLog("Disclaimer: Please limit use as in some rooms it is frowned upon.");
-      API.chatLog("You may type '/am automeh <on/off>' to automatically meh the song the song");
-      API.chatLog("------------------------------------------------------------");
-    }
-
     // Info :
 
     if (value == "/am info") {
+    	API.chatLog("------------------------------------------------------------");
         API.chatLog("AMPlug developed by Colin Rioux (ArdosMusic). For more info, check him out on twitter @ArdosMusic");
+        API.chatLog("------------------------------------------------------------");
     }
 
     // Autowoot:
@@ -70,19 +61,11 @@ function customcommand(value) {
         API.chatLog("-= Autowoot will deactivate after the current song! =-");
     }
 
-    // Automeh: •Todo: Delete? Decide.
+    // Autojoin:
 
-    if (value == "/am automeh on") {
-        automeh = 1;
-        $('#meh').click();
-        API.chatLog("[Secret Command]: Automeh has been activated!");
+    if (value == "/am autojoin on") {
+
     }
-
-    if (value == "/am automeh off") {
-      automeh = 0;
-      API.chatLog("[Secret Command]: You will stop meh-ing after the current song");
-    }
-
 
 }
 
