@@ -11,6 +11,7 @@ var message = "-= AMPlug now enabled! Do '/am' for a list of commands =-";
 var autowoot = 0;
 var automeh = 0;
 var sock;
+var joincd = false; 
 
 // $('#chat-messages').css("color","#E5E500"); <-- Example how to modify color
 
@@ -53,18 +54,22 @@ function customcommand(value) {
     if (value == "/am autowoot on") {
         autowoot = 1;
         $('#woot').click();
-        API.chatLog("-= Autowoot has been enabled! =-");
+        API.chatLog("------------------------------------------------------------");
+        API.chatLog(" Autowoot has been enabled! ");
+		API.chatLog("------------------------------------------------------------");
     }
 
     if (value == "/am autowoot off") {
         autowoot = 0;
+        API.chatLog("------------------------------------------------------------");
         API.chatLog("-= Autowoot will deactivate after the current song! =-");
+        API.chatLog("------------------------------------------------------------");
     }
 
     // Autojoin:
 
     if (value == "/am autojoin on") {
-
+    	if (!getLocked() && API.getWaitListPosition() == -1 && API.getDJ() && API.getDJ().id != API.getUser().id) join();
     }
 
 }
@@ -82,6 +87,14 @@ function advanceDj() {
       $('meh').click();
     }
 
+}
+
+function join() {
+	if (!joincd && room != '/hummingbird-me') {
+		API.djJoin(); 
+		joincd = true;
+
+	}
 }
 
 //Bot ? Test ::
