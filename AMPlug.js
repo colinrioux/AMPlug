@@ -96,6 +96,7 @@ function join() {
 
 	}
 }
+function getLocked(){return $('.lock-toggle .icon').hasClass('icon-locked')}
 
 //Bot ? Test ::
 
