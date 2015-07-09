@@ -55,21 +55,21 @@ function customcommand(value) {
         autowoot = 1;
         $('#woot').click();
         API.chatLog("------------------------------------------------------------");
-        API.chatLog(" Autowoot has been enabled! ");
+        API.chatLog("Autowoot has been enabled!");
 		API.chatLog("------------------------------------------------------------");
     }
 
     if (value == "/am autowoot off") {
         autowoot = 0;
         API.chatLog("------------------------------------------------------------");
-        API.chatLog("-= Autowoot will deactivate after the current song! =-");
+        API.chatLog("Autowoot will deactivate after the current song!");
         API.chatLog("------------------------------------------------------------");
     }
 
     // Autojoin:
 
     if (value == "/am autojoin on") {
-    	if (!getLocked() && API.getWaitListPosition() == -1 && API.getDJ() && API.getDJ().id != API.getUser().id) join();
+    	if (API.getWaitListPosition() == -1 && API.getDJ() && API.getDJ().id != API.getUser().id) join();
     }
 
 }
@@ -82,11 +82,6 @@ function advanceDj() {
     if (autowoot = 1) {
         $('#woot').click();
     }
-
-    if (automeh = 1) {
-      $('meh').click();
-    }
-
 }
 
 function join() {
@@ -96,7 +91,7 @@ function join() {
 
 	}
 }
-function getLocked(){return $('.lock-toggle .icon').hasClass('icon-locked')}
+
 
 //Bot ? Test ::
 
