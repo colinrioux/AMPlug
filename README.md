@@ -3,7 +3,7 @@ AMPlug
 
 ArdosMusic Official Plugin for Plug.dj
 Now discontinued
-You may visit the project site [here][http://colinrioux.github.io/AMPlug/]
+You may visit the project site here: [http://colinrioux.github.io/AMPlug/]
 
 Please do not modify without permission
 
