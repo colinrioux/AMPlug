@@ -13,5 +13,9 @@
 #title {
     color:#CC0000;
     font-family: 'rieslingregular';
+    margin-left:auto;
+    margin-right:auto;
+    width:6em;
+    font-size:32px;
 }
 
