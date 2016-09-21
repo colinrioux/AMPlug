@@ -9,7 +9,7 @@ const boot_message = "[AMPlug]: Plugin now enabled! Type '+am' for a list of com
 boot();
 
 function boot() {
-    API.chatLog(boot_message);
+    API.chatLog(boot_message, true);
 }
 
 API.on(API.CHAT, cHandler);
