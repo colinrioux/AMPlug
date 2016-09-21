@@ -17,8 +17,8 @@ API.on(API.CHAT_COMMAND, cHandler);
 function cHandler(value) {
     let prefix = "+";
     var cArr = value.split(" ");
-    if (value.startsWith("+am") && (cArr[1] === "help" || cArr.length == 1)) {
-        API.chatLog(["Test", "Test", "Test"].join("\n"));
+    if (value == "+am") {
+        API.chatLog("Test");
     }
 
 }
