@@ -12,7 +12,7 @@ function boot() {
     API.chatLog(boot_message);
 }
 
-API.on(API.CHAT_COMMAND, cHandler);
+API.on(API.CHAT, cHandler);
 
 function cHandler(value) {
     let prefix = "+";
