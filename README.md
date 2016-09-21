@@ -1,15 +1,19 @@
 AMPlug
 ======
-
-ArdosMusic Official Plugin for Plug.dj
-Now discontinued
+**Status:** Reinstated
 You may visit the project site here: [http://colinrioux.github.io/AMPlug/]
 
-Please do not modify without permission
-
-  Copyrighted (c) 2014-2015 by Colin Rioux (ArdosMusic)
-  Please do not modify or use without permission
-  
 ======
-Plug.dj has been shut down as of September 29 2015. Plugin will remain and perhaps will be ported to other similar sites. For
-now the file will remain in case of return.
+Plug.dj had been shut down as of September 29 2015.
+AMPlug was discontinued as of that date. 
+Since Plug.dj's reopening this year, I have decided to actually fully update
+this Plugin. 
+
+## Getting Started
+1. Create a new bookmark of this page, and put it on your favorites bar. 
+2. Right click the bookmark and choose `Edit Address`
+3. Delete the existing address, and paste: 
+`javascript:(function(){$.getScript('https://colinrioux.github.io/AMPlug/AMPlug.js');}());`
+
+And from there, you're all set! 
+Happy Plugging!
