@@ -12,7 +12,7 @@ function startup() {
     API.chatLog(message);
 }
 
-API.on(API.CHAT_COMMAND, handle);
+API.on(API.CHAT, handle);
 
 function handle(value) {
    
