@@ -16,7 +16,7 @@ API.on(API.CHAT_COMMAND, customcommand);
 
 function customcommand(value) {
    
-    if (value == "/am") {
+    if (value == "+am") {
         API.chatLog("Test");
     }
 
