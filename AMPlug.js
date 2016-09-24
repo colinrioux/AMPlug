@@ -16,7 +16,7 @@ API.on(API.CHAT, handle);
 
 function handle(value) {
    
-    if (value == "/am") {
+    if (value == "+am") {
         API.chatLog("Test");
     }
 
