@@ -12,11 +12,11 @@ function startup() {
     API.chatLog(message);
 }
 
-API.on(API.CHAT_COMMAND, customcommand);
+API.on(API.CHAT_COMMAND, custom);
 
-function customcommand(value) {
+function custom(value) {
    
-    if (value == "+am") {
+    if (value == "/am") {
         API.chatLog("Test");
     }
 
