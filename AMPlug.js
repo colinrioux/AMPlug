@@ -4,7 +4,7 @@
  *
  */
 
-var message = "[AMPlug]: Plugin now enabled! Type '+am' for a list of commands.";
+var message = "[ AMPlug ]: Plugin now enabled!\n Type '/am' for a list of commands.";
 
 startup();
 
@@ -12,9 +12,9 @@ function startup() {
     API.chatLog(message);
 }
 
-API.on(API.CHAT_COMMAND, custom);
+API.on(API.CHAT_COMMAND, handle);
 
-function custom(value) {
+function handle(value) {
    
     if (value == "/am") {
         API.chatLog("Test");
