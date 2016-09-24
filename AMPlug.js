@@ -4,17 +4,17 @@
  *
  */
 
-var boot_message = "[AMPlug]: Plugin now enabled! Type '+am' for a list of commands.";
+var message = "[AMPlug]: Plugin now enabled! Type '+am' for a list of commands.";
 
-boot();
+startup();
 
-function boot() {
-    API.chatLog(boot_message);
+function startup() {
+    API.chatLog(message);
 }
 
-API.on(API.CHAT_COMMAND, cHandler);
+API.on(API.CHAT_COMMAND, customcommand);
 
-function cHandler(value) {
+function customcommand(value) {
    
     if (value == "/am") {
         API.chatLog("Test");
